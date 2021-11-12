@@ -10,8 +10,9 @@ In order to start provisioning Grafana dashboards, simply create a directory and
 # grafana dashboards module
 module "grafana_dashboards" {
 
-  source                       = "<source>"
+  source                       = "ammilam/grafana-dashboards/kubernetes"
+  version                      = "0.1.1"
   grafana_dashboards_directory = "${path.module}/grafana-dashboards" # directory containing the dashboards
-  monitoring_namespace         = module.kube_prometheus_stack.monitoring_namespace
+  monitoring_namespace         = "monitoring"
 }
 ```
