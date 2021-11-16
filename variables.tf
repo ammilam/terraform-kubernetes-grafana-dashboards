@@ -3,12 +3,6 @@ variable "monitoring_namespace" {
   description = "Namespace that kube-prometheus-stack is deployed into"
 }
 
-variable "prom_stack_common_label" {
-  type        = string
-  default     = "default"
-  description = "label added to all resources created via kube-prometheus-stack helm chart, helps with prometheus rule ingestion"
-}
-
 variable "grafana_dashboard_label" {
   type        = string
   default     = "grafana_dashboard"
