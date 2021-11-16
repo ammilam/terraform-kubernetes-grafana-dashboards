@@ -11,6 +11,5 @@ variable "grafana_dashboard_label" {
 
 variable "grafana_dashboards_directory" {
   type        = string
-  default     = ""
   description = "location of the directory containing the grafana dashboards"
 }
